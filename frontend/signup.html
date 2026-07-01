@@ -8,53 +8,45 @@
 </head>
 <body>
 
+    <nav class="auth-navbar">
+        <a href="index.html" class="auth-nav-logo">🎬 CineVerse</a>
+        <a href="login.html" class="auth-nav-link">Already a member? Login →</a>
+    </nav>
+
     <div class="auth-container">
-
         <div class="auth-card">
+            <div class="auth-header">
+                <div class="logo-text">🎬 CineVerse</div>
+                <h1>Create Account</h1>
+                <p>Join thousands of movie lovers today</p>
+            </div>
 
-            <h1>Create Account</h1>
-
-           <form id="signupForm">
-
-                <input
-                type="text"
-                id="name"
-                placeholder="Name"
-                required>
-
-                <input
-                type="email"
-                id="email"
-                placeholder="Email"
-                required>
-
-                <input
-                type="password"
-                id="password"
-                placeholder="Password"
-                required>
-
-                <button type="submit">
-                    Sign Up
-                </button>
-
+            <form id="signupForm">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Your full name" required>
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" id="email" placeholder="you@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="auth-btn">Create Account</button>
             </form>
 
-         
-
-            <p>
-                Already have an account?
-                <a href="login.html">
-                    Login
-                </a>
-            </p>
-
+            <div class="auth-footer">
+                Already have an account? <a href="login.html">Sign In</a>
+            </div>
         </div>
-
     </div>
 
-    <!-- <script src="../js/signup.js"></script> -->
+    <footer class="auth-page-footer">
+        <p>© 2026 CineVerse. All rights reserved.</p>
+    </footer>
 
-
+    <script src="js/signup.js"></script>
 </body>
 </html>
